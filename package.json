@@ -1,0 +1,23 @@
+{
+  "name": "dbanksdesign",
+  "version": "1.0.0",
+  "description": "The personal card for Danny Banks (@dbanksdesign)",
+  "main": "index.js",
+  "repository": "git@github.com:dbanksdesign/businesscard.git",
+  "author": "Danny Banks <dbanksdesign@gmail.com>",
+  "homepage": "https://dbanks.design",
+  "license": "MIT",
+  "bin": {
+    "dbanksdesign": "./bin/card.js"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "boxen": "^4.1.0",
+    "chalk": "^3.0.0"
+  }
+}
