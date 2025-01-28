@@ -22,14 +22,16 @@ const options = {
 const data = {
   name: chalk.bold.white("Danny Banks"),
   handle: chalk.bold.white("dbanksdesign"),
-  work: chalk.white("Senior Design Technologist at Amazon"),
+  work: chalk.white("Principal Design Technologist at AWS"),
+  bluesky: chalk.blue("https://bsky.app/profile/dbanks.design"),
   twitter: chalk.cyan("https://twitter.com/dbanksdesign"),
   npm: chalk.red("https://npmjs.com/~dbanksdesign"),
-  github: chalk.green("https://github.com/dbanksdesign"),
+  github: chalk.blackBright("https://github.com/dbanksdesign"),
   linkedin:
     chalk.blue("https://linkedin.com/in/dbanksdesign"),
   web: chalk.cyan("https://dbanks.design"),
   npx: chalk.magenta("$ npx dbanksdesign"),
+  labelBluesky: chalk.white.bold("Bluesky:   "),
   labelTwitter: chalk.white.bold("Twitter:   "),
   labelnpm: chalk.white.bold("npm:       "),
   labelGitHub: chalk.white.bold("GitHub:    "),
@@ -42,6 +44,7 @@ const data = {
 const newline = "\n";
 const heading = `${data.name} / ${data.handle}`;
 const working = `${data.work}`;
+const blueskying = `${data.labelBluesky}  ${data.bluesky}`;
 const twittering = `${data.labelTwitter}  ${data.twitter}`;
 const npming = `${data.labelnpm}  ${data.npm}`;
 const githubing = `${data.labelGitHub}  ${data.github}`;
@@ -56,6 +59,8 @@ const output =
   working +
   newline + // Add one whole blank line
   newline + // data.labelWork + data.work
+  blueskying +
+  newline + // data.labelTwitter + data.twitter
   twittering +
   newline + // data.labelTwitter + data.twitter
   npming +
